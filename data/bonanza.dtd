@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Order placment data for BB's BB's B, BBB
+-->
+
+<!--An order identifies the customer, order type, burgers and anything special-->
+<!ELEMENT order (customer, delivery?, burger+, special?)>
+<!ELEMENT customer (#PCDATA)>
+
+<!ATTLIST order
+    type (eatin|takeout|delivery) #REQUIRED
+>
+
+<!ELEMENT delivery (#PCDATA)>
+
+<!ELEMENT special (#PCDATA)>
+
+<!ELEMENT burger (patty, cheese?, topping*, sauce*, instructions?, name?)>
+
+<!ELEMENT patty (#PCDATA)>
+<!ATTLIST patty
+    type (beef|pork|turkey|bison|vege) "beef" 
+>
+
+
+<!ELEMENT cheese EMPTY>
+<!ATTLIST cheese 
+    top (american|swiss|jack|blue|gruyere|gouda|aged|goat|brie) #IMPLIED
+    bottom (american|swiss|jack|blue|gruyere|gouda|aged|goat|brie) #IMPLIED
+>
+
+<!ELEMENT topping (#PCDATA)>
+<!ATTLIST topping
+    type (lettuce|tomato|raw|dill|roasted|shrooms|salsa|bacon|chilies|fkchili|avocado|egg|porkbelly) #REQUIRED 
+>
+
+
+<!ELEMENT sauce EMPTY>
+<!ATTLIST sauce
+    type (ketchup|mustard|mayo|fksauce) #REQUIRED
+>
+
+<!ELEMENT instructions (#PCDATA)>
+
+<!ELEMENT name (#PCDATA)>

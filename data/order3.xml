@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE order SYSTEM 'bonanza.dtd'>
+
+<order type="takeout">
+    <customer>Jix</customer>
+    <burger>
+        <patty type="turkey"/>
+        <cheese bottom="blue"/>
+        <topping type="lettuce"/>
+        <topping type="tomato"/>
+        <topping type="bacon"/>
+        <topping type="dill"/>
+        <sauce type="mayo"/>
+        <sauce type="fksauce"/>
+    </burger>
+    <burger>
+        <patty type="beef"/>
+        <cheese top="swiss" bottom="brie"/>
+        <topping type="lettuce"/>
+        <topping type="tomato"/>
+        <topping type="bacon"/>
+        <topping type="dill"/>
+        <topping type="porkbelly"/>
+        <topping type="avocado"/>
+        <topping type="shrooms"/>
+        <sauce type="mustard"/>
+        <sauce type="mayo"/>
+        <sauce type="fksauce"/>
+        <instructions>Please cover this in peanut butter and then deep-fry it.</instructions>
+    </burger>
+</order>
